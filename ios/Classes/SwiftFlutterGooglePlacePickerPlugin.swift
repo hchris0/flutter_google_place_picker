@@ -29,8 +29,8 @@ public class SwiftFlutterGooglePlacePickerPlugin: NSObject, FlutterPlugin, GMSPl
         // Dismiss the place picker, as it cannot dismiss itself.
         viewController.dismiss(animated: true, completion: nil)
         let dictionary: NSDictionary = [
-            "latitude" : "\place.coordinate.latitude",
-            "longitude" : "\place.coordinate.longitude",
+            "latitude" : "\(place.coordinate.latitude)",
+            "longitude" : "\(place.coordinate.longitude)",
             "id" : place.placeID,
             "name" : place.name,
             "address": place.formattedAddress ?? "unknown"
