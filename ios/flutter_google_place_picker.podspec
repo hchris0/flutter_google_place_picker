@@ -19,5 +19,6 @@ A new flutter plugin project.
   s.dependency 'GooglePlacePicker'
   s.dependency 'GoogleMaps'
   s.ios.deployment_target = '8.0'
+  s.static_framework = true
 end
 
